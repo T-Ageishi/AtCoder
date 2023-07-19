@@ -1,0 +1,9 @@
+---
+BasedOnStyle: Google
+IndentWidth: 2
+# 引数は左揃え
+AlignAfterOpenBracket: Align
+# マクロの位置を揃える
+AlignConsecutiveMacros: true
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
