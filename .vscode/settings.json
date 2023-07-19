@@ -1,0 +1,22 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "random": "cpp",
+    "*.tcc": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "forward_list": "cpp",
+    "array": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "stacktrace": "cpp",
+    "regex": "cpp",
+    "valarray": "cpp"
+  }
+}
