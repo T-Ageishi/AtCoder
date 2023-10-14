@@ -7,3 +7,4 @@ AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: true
 BreakBeforeBraces: Attach
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortFunctionsOnASingleLine: None
