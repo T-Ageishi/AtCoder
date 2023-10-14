@@ -1,10 +1,11 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "WSL",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\pg\\mingw64\\include"
+                "/usr/include/**",
+                "/home/workspace/AtCoder/atcoder"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,7 +13,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "C:\\pg\\mingw64\\bin\\gcc.exe",
+            "compilerPath": "/usr/bin/gcc-11",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"

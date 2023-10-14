@@ -18,5 +18,6 @@
     "stacktrace": "cpp",
     "regex": "cpp",
     "valarray": "cpp"
-  }
+  },
+  "editor.formatOnSave": true
 }
