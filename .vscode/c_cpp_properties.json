@@ -4,16 +4,14 @@
             "name": "WSL",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/**",
-                "/home/workspace/AtCoder/atcoder"
+                "/usr/include/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "/usr/bin/gcc-11",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"

@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#include <atcoder/all>
 using namespace std;
+#include <atcoder/all>
 using namespace atcoder;
 typedef unsigned long long ull;
 typedef long long ll;  // 9*10^18

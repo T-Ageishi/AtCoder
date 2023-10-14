@@ -1,4 +1,5 @@
-# コンパイル後ファイル
+# main.cpp
+main.cpp
 a.out
 
 # ライブラリ
@@ -8,3 +9,4 @@ atcoder/
 abc*/
 arc*/
 agc*/
+test/

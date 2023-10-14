@@ -2,15 +2,13 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "C/C++: g++-11 compile file",
+      "label": "build",
       "command": "g++",
       "args": [
+        "main.cpp",
         "-std=c++17",
         "-I",
-        ".",
-      ],
-      "problemMatcher": [
-        "$gcc"
+        "."
       ],
       "group": {
         "kind": "build",

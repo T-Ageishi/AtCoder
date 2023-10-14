@@ -4,10 +4,10 @@ AtCoder
 # online-judge-tools
 ## サンプルケースのダウンロード
 acc new abc322
-※abc322は ~/contests/abc322 のやつ
+oj d https://atcoder.jp/contests/abc184/tasks/abc184_b
 
 ## ディレクトリの移動
-cd ./abc322/a
+cd ./abc276/c
 cd /home/workspace/AtCoder
 
 ## コンパイル
@@ -18,3 +18,7 @@ oj t -d ./test/
 
 ## 普通に実行
 ./a.out
+
+# ssh
+## eval "$(ssh-agent -s)"
+## ssh-add ~/.ssh/gitssh
