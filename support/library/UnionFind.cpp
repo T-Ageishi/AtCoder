@@ -1,39 +1,63 @@
 #include <bits/stdc++.h>
 using namespace std;
+#include <atcoder/all>
+using namespace atcoder;
 typedef unsigned long long ull;
-typedef long long ll;
+typedef long long ll;  // 9*10^18
+#define rep(i, a, b)  for (int i = a; i < b; i++)
+#define rrep(i, a, b) for (int i = a; i >= b; i--)
+const ll infl = 1LL << 60;
+const int inf = INT_MAX / 2;
+const string yes = "Yes";
+const string no = "No";
 
 class UnionFind {
  public:
-  vector<int> parent(100009);
-  vector<int> siz(100009);
+  vector<int> par;
+  vector<int> siz;
 
-  // N頂点の Union-Findを作成
-  void init(int N) {
-    for (int i = 1; i <= N; i++) parent[i] = -1;  // 最初は親がない
-    for (int i = 1; i <= N; i++) siz[i] = 1;      // 最初は頂点数が1
+  UnionFind() {
+    par.resize(100'009);
+    siz.resize(100'009);
   }
 
-  // 頂点xの根を返す関数
+  /**
+   * n頂点のUnion-Findを作成
+   */
+  void init(int n) {
+    for (int i = 0; i < n; i++) par[i] = -1;  // 最初は親がない
+    for (int i = 0; i < n; i++) siz[i] = 1;
+  }
+
+  /**
+   * 頂点xの根を返す
+   */
   int root(int x) {
-    if (parent[x] == -1) return x;
-    else return parent[x] = root(parent[x]);
+    if (par[x] == -1) return x;  // 1つ先がないのでxが根
+    return root(par[x]);
   }
 
-  // 要素uと要素vを統合する
+  /**
+   * 要素uと要素vを統合する
+   */
   void unite(int u, int v) {
     int rootU = root(u);
     int rootV = root(v);
-    if (rootU == rootV) return;  // 同じグループなら処理しない
+    if (rootU == rootV) return;  // 既に同じグループ
+
     if (siz[rootU] < siz[rootV]) {
-      parent[rootU] = rootV;
+      par[rootU] = rootV;
       siz[rootV] = siz[rootU] + siz[rootV];
     } else {
-      parent[rootV] = rootU;
+      par[rootV] = rootU;
       siz[rootU] = siz[rootU] + siz[rootV];
     }
   }
 
-  // 要素uと要素vが同一のグループかどうかを返す関数
-  bool same(int u, int v) { return root(u) == root(v); }
-}
+  /**
+   * 要素uと要素vが同じグループかどうかを返す
+   */
+  bool same(int u, int v) {
+    return root(u) == root(v);
+  }
+};

@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.module": "php",
     "iostream": "cpp",
     "random": "cpp",
     "*.tcc": "cpp",
@@ -17,7 +18,16 @@
     "span": "cpp",
     "stacktrace": "cpp",
     "regex": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "ostream": "cpp",
+    "iomanip": "cpp",
+    "bitset": "cpp",
+    "utility": "cpp",
+    "ratio": "cpp",
+    "all": "cpp",
+    "chrono": "cpp",
+    "tuple": "cpp"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
 }

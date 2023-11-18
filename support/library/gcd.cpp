@@ -8,6 +8,7 @@ const ll infl = 1LL << 60;
 const int inf = INT_MAX / 2;
 
 int gcd(int A, int B) {
+  // 単純に最大公約数を求めたい場合は__gcd(x, y)を使おう
   while (A >= 1 && B >= 1) {
     if (A >= B) A = A % B;
     else B = B % A;

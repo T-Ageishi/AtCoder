@@ -6,3 +6,4 @@ AlignConsecutiveMacros: true
 BreakBeforeBraces: Attach
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 AllowShortFunctionsOnASingleLine: None
+ColumnLimit: 0
