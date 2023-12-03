@@ -1,11 +1,14 @@
 #!/bin/bash
 #テストケースのダウンロード
 
-rm -rf ./test
+url = "";
 
 if [$1 == ""]; then
   read -p "URLを入力してください: " url
-  oj d ${url}
 else
-  oj d $1
+  url = $1
 fi
+
+
+rm -rf ./test
+oj d ${url}

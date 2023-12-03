@@ -26,7 +26,8 @@
     "ratio": "cpp",
     "all": "cpp",
     "chrono": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "complex": "cpp"
   },
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",

@@ -1,18 +1,15 @@
-・文字列の扱い
-・オーバーフロー
-
-・ソート
-ABC323 B
+■ ソート
+・ABC323 B
 
 ・自作ソート
 スコアを小数で算出して比較すると誤差が気になるので、ソート関数を自作して対応する例
 https://atcoder.jp/contests/abc308/tasks/abc308_c/editorial
 
-・小数
+■ 小数
 https://blog.hamayanhamayan.com/entry/2019/08/19/024027
 割り算は整数同士でやると、整数の結果となってしまうので、A[i]もdoubleで取得して、全体的にdoubleで計算しよう。
 
-・計算過程に巨大な数が現れる場合の対処
+■ 計算過程に巨大な数が現れる場合の対処
 https://atcoder.jp/contests/abc169/tasks/abc169_b
 https://blog.hamayanhamayan.com/entry/2020/06/01/210505
 
@@ -30,5 +27,10 @@ C++でやるのは辛いので、pythonで解こう！！！！！！
 infl<abを満たす判別は浮動小数点を使ってもいいし、lobを使ってもいいが、infl/b<aと変形するのが良いらしい。
 結果も安定するし、そこまで遅くはない。
 
-・modNの場所に止まる系がむずい
+■ modNの場所に止まる系がむずい
 https://atcoder.jp/contests/abc268/tasks/abc268_c
+
+■ マージテク
+小さい方を大きい方にマージする
+・https://atcoder.jp/contests/abc329/tasks/abc329_f/editorial
+・https://blog.hamayanhamayan.com/entry/2017/02/10/132728
