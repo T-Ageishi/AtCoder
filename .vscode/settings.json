@@ -27,7 +27,15 @@
     "all": "cpp",
     "chrono": "cpp",
     "tuple": "cpp",
-    "complex": "cpp"
+    "complex": "cpp",
+    "any": "cpp",
+    "charconv": "cpp",
+    "compare": "cpp",
+    "functional": "cpp",
+    "memory_resource": "cpp",
+    "scoped_allocator": "cpp",
+    "type_traits": "cpp",
+    "variant": "cpp"
   },
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
